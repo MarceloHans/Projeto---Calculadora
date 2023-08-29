@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/script.js" defer></script>
+    <title>Calculadora StackX</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Calculando com a StackX</h1>
+    </div>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="display" readonly>
+            <div class="buttons">
+                <button class="num-btn">7</button>
+                <button class="num-btn">8</button>
+                <button class="num-btn">9</button>
+                <button class="oper-btn">/</button>
+                <button class="num-btn">4</button>
+                <button class="num-btn">5</button>
+                <button class="num-btn">6</button>
+                <button class="oper-btn">*</button>
+                <button class="num-btn">1</button>
+                <button class="num-btn">2</button>
+                <button class="num-btn">3</button>
+                <button class="oper-btn">-</button>
+                <button id="clear-btn">C</button>
+                <button class="num-btn">0</button>
+                <button id="equal-btn">=</button>
+                <button class="oper-btn">+</button>
+            </div>
+        </div>
+        <div class="history">
+            <h2>Últimas Operações</h2>
+            <table id="history-table">
+                <tr>
+                    <th>Data e Hora</th>
+                    <th>Operação</th>
+                    <th>Resultado</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
