@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(127, 255, 212);
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.calculator {
+    text-align: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+}
+
+.num-btn, .oper-btn {
+    padding: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.oper-btn {
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgb(25, 10, 228);
+}
+
+#equal-btn, #clear-btn {
+    border-radius: 10px;
+    background-color: rgb(89, 187, 233);
+    font-size: 24px;
+}
+
+.num-btn:hover, .oper-btn:hover, #equal-btn:hover, #clear-btn:hover {
+    background-color: yellow;
+    color: black;
+    border-radius: 3px;
+}
+
+#display {
+    width: 92%;
+    padding: 10px;
+    font-size: 24px;
+    gap: 3px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.history {
+    padding-left: 30px;
+}
+
+.history h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+#history-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: rgb(89, 187, 233);
+}
+
+#history-table th, #history-table td {
+    border: 1px solid rgb(51, 51, 51);
+    padding: 8px;
+    text-align: center;
+}
+
+#history-table th {
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
